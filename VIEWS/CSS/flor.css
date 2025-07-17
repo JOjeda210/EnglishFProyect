@@ -1,0 +1,146 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background-color: #234;
+  padding-top: 20px;
+}
+
+.sidebar h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.sidebar-menu li a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li a.active {
+  background-color: #4a6;
+  color: #fff;
+}
+
+/* Content */
+.content {
+  margin-left: 240px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Cards for each section */
+.content > div {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+/* Headings */
+.content h1,
+.content h2,
+.content h3 {
+  color: #234;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-bottom: 2px solid #4a6;
+}
+
+.parrafo {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Images */
+.team-img {
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+}
+
+.representacion {
+  width: 300px;
+  max-width: 90%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+/* Lists */
+ul.parrafo {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+ul.parrafo li {
+  margin-bottom: 5px;
+}
+
+/* Footer (if used) */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #234;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar h2 {
+    margin: 10px 0;
+  }
+
+  .sidebar-menu li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .team-img,
+  .representacion {
+    width: 80%;
+  }
+
+  .content > div {
+    margin: 10px 0;
+  }
+}
